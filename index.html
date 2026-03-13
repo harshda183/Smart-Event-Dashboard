@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Event Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🎯 Smart Event Dashboard</h1>
+<div class="wrapper">
+
+<div class="container">
+  <!-- Add Event -->
+  <div class="card">
+    <h2>Add New Event</h2>
+    <input type="text" id="title" placeholder="Event Title">
+    <input type="date" id="date">
+    <select id="category">
+      <option>Conference</option>
+      <option>Workshop</option>
+      <option>Meetup</option>
+      <option>Festival</option>
+    </select>
+    <textarea id="description" placeholder="Description"></textarea>
+    <button onclick="addEvent()">Add Event</button>
+  </div>
+
+  <!-- Events List -->
+  <div class="card">
+    <h2>My Events</h2>
+    <div class="button-group">
+      <button onclick="clearEvents()">Clear All Events</button>
+      <button onclick="addSampleEvent()">Add Sample Event</button>
+    </div>
+    <div class="events-container" id="eventsContainer">
+      <p id="emptyMessage">No events yet. Add your first event!</p>
+    </div>
+  </div>
+</div>
+
+<!-- DOM Manipulation Demo -->
+<div class="dom-demo">
+  <h2>DOM Manipulation Demo</h2>
+  <div class="demo-box" id="demoBox"></div>
+  <p id="keyOutput" style="color: blue; margin-top:10px;"></p>
+</div>
+
+
+<script src="Index.js"></script>
+</div>
+
+</body>
+</html>
